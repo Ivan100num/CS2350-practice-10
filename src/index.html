@@ -8,9 +8,95 @@
   <link rel="stylesheet" href="/stylesheets/main.css">
   <title>CS 2350 Starter Project</title>
 </head>
+<style>
+  * {
+    box-sizing: border-box;
+}
+main {
+    width: 85%;
+    margin: auto;
+    
+}
 
+
+body {
+    background-image: url('images/Photo.jpg');
+}
+.movies {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+} 
+.movies .thumbnail{
+    margin: 5px;
+    
+}
+
+.movies .thumbnail img{
+    width: 100%;
+    height: auto;
+    
+}
+.movies form {
+    grid-area: 1 / 1 / 2 / span 9;
+    
+}
+.movies form input {
+    width: 70%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid rgb(61, 196, 230);
+    
+}
+.movies form button {
+    background-color:rgb(50, 197, 116);
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    border: none;
+}
+.movies .featured {
+    grid-area: 2 / 1 / span 4 / span 6;
+    margin: 10px;
+    
+}
+.movies .featured img {
+    width: 40%;
+    margin-right: 10px;
+    
+}
+.hidden {
+    display: none;
+}
+</style>
 <body>
-  <h1>Welcome to CS2350!</h1>
+  
+<h1>Top 10 Movies</h1>
+  <main>
+  <div class="movies">
+    <form>
+      <input type="search">
+        <button type="button">search</button>
+    </form>
+    
+   <div class="featured">select a movie to display</div>
+<div id="m1" class="thumbnail"></div>
+<div id="m2" class="thumbnail"></div>
+<div id="m3" class="thumbnail"></div>
+<div id="m4" class="thumbnail"></div>
+<div id="m5" class="thumbnail"></div>
+<div id="m6" class="thumbnail"></div>
+<div id="m7" class="thumbnail"></div>
+<div id="m8" class="thumbnail"></div>
+<div id="m9" class="thumbnail"></div>
+<div id="m10" class="thumbnail"></div>
+<div id="m11" class="thumbnail"></div>
+<div id="m12" class="thumbnail"></div>
+
+
+</div>
+</main>
+<body>
+
   <script src="/javascripts/main.js"></script>
 </body>
 
